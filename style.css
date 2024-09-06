@@ -1,0 +1,292 @@
+body,
+html {
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+body {
+  background-image: url("/images/product-container-underwater-still-life.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainContectDivHomeDefault {
+  height: 100vh;
+  padding: 20px;
+  font-size: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+.activePage {
+  background-color: blue;
+  color: aliceblue;
+}
+
+.singleCoinDiv {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(135deg, #1e3c72, #2a5298);
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.singleCoinDiv:hover {
+  background-image: linear-gradient(135deg, #daa520, #ffd700);
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.coinInfoDiv {
+  display: none;
+}
+
+.coinInfo {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-outline-info {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.underlined {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.searchAreaDiv {
+  margin-left: auto;
+  display: flex;
+}
+.searchAreaDiv input {
+  border: none;
+  border-radius: 3px;
+}
+.searchAreaDiv input:hover {
+  background-color: gold;
+}
+
+@media (max-width: 767px) {
+  #mainContectDiv {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  #mainContectDiv {
+    grid-template-columns: 1fr;
+  }
+}
+
+#loadingSpinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.justHeaderDiv {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.smallPicInHeader {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.smallPicInHeader img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.liveReportesHeaderClass {
+  margin: 30px;
+}
+
+.mainContectDivLiveReportesClass {
+  background-image: url("/images/close-up-hands-holding-tablet.jpg");
+  height: 30vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.userSingleCoinDiv {
+  background-image: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  border: none;
+  cursor: pointer;
+  margin: 30px;
+  padding: 10px;
+}
+
+.userSingleCoinDiv:hover {
+  background-image: linear-gradient(135deg, #daa520, #ffd700);
+}
+
+.modelCoinDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContectDivAboutDefault {
+  background: linear-gradient(to right, #003366, #004080);
+  padding: 40px;
+  margin: 40px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid #d4af37;
+}
+.about-container:hover {
+    background-color:  #d4af37;
+}
+
+
+.about-header h2 {
+  color: #003366; 
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.about-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #d4af37;
+}
+
+.about-text {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #003366; 
+}
+
+.social-links a:hover {
+  background-color: #d4af37; 
+  color: #003366; 
+}
+
+.fab,
+.fas {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.fab.fa-facebook {
+  color: #4267b2;
+}
+
+.fab.fa-linkedin {
+  color: #0077b5;
+}
+
+.fas.fa-envelope {
+  color: #d14836;
+}
+
+

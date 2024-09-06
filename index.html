@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="justHeaderDiv">
+      <h1>Crypto-Project</h1>    
+      <div class="smallPicInHeader">
+        <img src="/images/AdobeStock_408941488_Preview.jpeg" alt="" />
+      </div>
+    </div>
+    <div class="headerDiv">
+      <div class="navbarDiv">
+        <button type="button" id="homeBtn" class="btn btn-outline-primary">
+          Home
+        </button>
+        <button
+          type="button"
+          id="liveReportesBtn"
+          class="btn btn-outline-primary"
+        >
+          Live-Reportes
+        </button>
+        <button type="button" id="aboutBtn" class="btn btn-outline-primary">
+          About
+        </button>
+      </div>
+      <div class="searchAreaDiv">
+        <input type="text" id="userSearchInput" placeholder="Search Coin Id" />
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic mixed styles example"
+        >
+          <button id="userSearchBtn" type="button" class="btn btn-success">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainContectDiv" class="mainContectDivHomeDefault">
+      <div id="loadingSpinner" style="display: none">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">You can choose only 5 coins</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal body -->
+          <div id="modelContent" class="modal-body"></div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              id="saveModelBtn"
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
